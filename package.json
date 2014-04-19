@@ -1,0 +1,8 @@
+{
+	"name": "protractor-demo",
+	"version": "0.0.1",
+	"repository": "https://github.com/rolaveric/protractorDemo",
+	"devDependencies": {
+		"bower": "~1.3.2"
+	}
+}

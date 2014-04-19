@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="protractorDemo">
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>E2E Testing with Protractor Demo</title>
+	<link rel="stylesheet" type="text/css" href="app.css"/>
+</head>
+<body>
+<header>
+	<h1>E2E Testing with Protractor Demo</h1>
+</header>
+<section ng-controller="clickDemoCtrl as click">
+	<h2>Click to Reverse</h2>
+	<button type="button" ng-click="click.btnClick()">{{click.btnText}}</button>
+</section>
+<section ng-controller="dragDropDemoCtrl as dnd">
+	<h2>Drag and Drop</h2>
+	<ul ng-repeat="list in dnd.lists" ng-class="dnd.listClass(list)" ui-event="dnd.listEvents">
+		<li ng-repeat="item in list.items" class="item" ui-event="dnd.itemEvents" draggable="true">
+			<strong>{{item}}</strong>
+		</li>
+	</ul>
+</section>
+
+<script src="components/angular/angular.js"></script>
+<script src="components/angular-ui-utils/ui-utils.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
