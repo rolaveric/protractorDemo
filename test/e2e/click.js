@@ -3,7 +3,7 @@ describe('click to reverse', function () {
 
 	it('Reverses the button label on click', function () {
 		// load the page
-		browser.get('http://localhost:63342/protractorDemo/index.html');
+		browser.get('index.html');
 
 		// Find the button
 		btn = element(by.binding('click.btnText'));
@@ -15,7 +15,7 @@ describe('click to reverse', function () {
 		expect(btn.getText()).toEqual('esrever ot kcilC');
 	});
 
-	it('Change the label back on the next click', function () {
+	it('Changes the label back on the next click', function () {
 		// Clicks it again
 		btn.click();
 

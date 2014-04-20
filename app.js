@@ -50,7 +50,7 @@
 
 			function checkEvent(event, targetList) {
 				var dt = event.dataTransfer;
-				return dt.types.indexOf('text/plain') != -1 && dt.types.indexOf('application/x-origin') != -1 &&
+				return _.contains(dt.types, 'text/plain') && _.contains(dt.types, 'application/x-origin') &&
 					// Will allow us to do what we want
 					dt.effectAllowed == 'move' &&
 					// And did not originate from this list
@@ -133,4 +133,3 @@
 	]);
 
 })();
-
