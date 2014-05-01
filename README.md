@@ -9,22 +9,26 @@ Clone the repository
 
 `git clone https://github.com/rolaveric/protractorDemo`
 
-Install bower and protractor node modules globally
+Install bower and protractor node modules locally
 
-`sudo npm install -g protractor bower`
+`npm install`
 
 Install bower components
 
-`bower install`
+`node_modules/bower/bin/bower install`
 
 Install selenium server
 
-`sudo webdriver-manager update`
+`node_modules/protractor/bin/webdriver-manager update`
 
 Start selenium server
 
-`webdriver-manager start`
+`node_modules/protractor/bin/webdriver-manager start`
+
+Start web server
+
+`node config/web-server.js`
 
 Run protractor
 
-`protractor config/protractor.conf.js`
+`node_modules/protractor/bin/protractor config/protractor.conf.js`
