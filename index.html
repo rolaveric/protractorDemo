@@ -13,18 +13,8 @@
 	<h2>Click to Reverse</h2>
 	<button type="button" ng-click="click.btnClick()">{{click.btnText}}</button>
 </section>
-<section ng-controller="dragDropDemoCtrl as dnd">
-	<h2>Drag and Drop</h2>
-	<ul ng-repeat="list in dnd.lists" ng-class="dnd.listClass(list)" ui-event="dnd.listEvents">
-		<li ng-repeat="item in list.items" class="item" ui-event="dnd.itemEvents" draggable="true">
-			<strong>{{item}}</strong>
-		</li>
-	</ul>
-</section>
 
-<script src="bower_components/lodash/dist/lodash.js"></script>
 <script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-ui-utils/ui-utils.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

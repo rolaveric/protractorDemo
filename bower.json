@@ -7,8 +7,6 @@
 		"components"
 	],
 	"devDependencies": {
-		"angularjs": "latest",
-		"angular-ui-utils": "~0.1.1",
-		"lodash": "~2.4.1"
+		"angular": "latest"
 	}
 }

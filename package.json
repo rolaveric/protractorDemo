@@ -5,5 +5,8 @@
   "devDependencies": {
     "bower": "~1.3.3",
     "protractor": "~0.22.0"
+  },
+  "scripts": {
+	  "start": "node config/web-server.js"
   }
 }
